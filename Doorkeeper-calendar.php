@@ -5,7 +5,7 @@
 Plugin Name: Doorkeeper Calendar
 Plugin URI: http://unplat.info/
 Description: Doorkeeperから指定のグループのイベントカレンダーを表示します。1)Doorkeeper設定より、DoorkeeperのグループIDを設定。2)表示したい箇所にecho $dkCalendar->get_calendar();と記述。3)もしくは、ショートコードで[doorkeeper_calendar]と記述。
-Version: 0.1
+Version: 0.2
 Author: Ippei Sumida
 Author URI: http://unplat.info/
 License: GPL V2
@@ -199,4 +199,3 @@ function doorkeeper_calendar() {
     return $calendar->get_calendar();
 }
 add_shortcode('doorkeeper_calendar', 'doorkeeper_calendar');
-
